@@ -1,4 +1,5 @@
 import { StyleSheet, Text } from 'react-native'
+import theme from '../styles/theme'
 
 interface TextHeaderProps {
   header: String
@@ -12,10 +13,11 @@ const TextHeader = ({ header }: TextHeaderProps) =>
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#fff',
     marginTop: 10,
     textAlign: 'center',
-    fontSize: 26
+    fontSize: 36,
+    color: theme.colors.textPrimary,
+    fontWeight: 'bold'
   },
 })
 
